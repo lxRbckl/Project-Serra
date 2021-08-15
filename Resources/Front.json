@@ -1,0 +1,30 @@
+
+{
+  "h1Style" : {
+    "fontSize" : 39,
+    "textAlign" : "center",
+    "fontFamily" : "sans serif"
+  },
+  "dropdownStyle" : {
+    "marginTop" : 3,
+    "border" : "0px",
+    "borderRadius" : 5,
+    "fontFamily" : "sans serif",
+    "backgroundColor" : "#181818"
+  },
+  "divStyle" : {
+    "margin" : 5,
+    "padding" : 10,
+    "borderRadius" : 5,
+    "backgroundColor" : "#121212"
+  },
+  "datatableColumn" : [
+    "Date",
+    "Fiber",
+    "Sugar",
+    "Calories",
+    "Carbohydrates",
+    "Weight"
+
+  ]
+}
