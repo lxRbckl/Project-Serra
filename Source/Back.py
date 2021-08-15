@@ -24,6 +24,7 @@ async def addFunction(ctx, *args):
 
     for key, value in setting['wordBank'].items():
 
+        # If Valid <
         if (args[0] in value):
 
             data = jsonLoad(f'{path}/Data/{ctx.author}')
@@ -32,11 +33,14 @@ async def addFunction(ctx, *args):
             await ctx.author.send(f'{key} : {data[0][key]}', delete_after = 60)
             await jsonDump(f'{path}/Data/{ctx.author}', data)
 
+        # >
+
 
 @serra.command(aliases = ['weight', 'Weight'])
 async def weightFunction(ctx, arg):
     ''' arg : float '''
 
+    # Declaration <
     data = jsonLoad(f'{path}/Data/{ctx.author}')
     today = [{'Fiber' : 0,
               'Sugar' : 0,
@@ -45,7 +49,12 @@ async def weightFunction(ctx, arg):
               'Weight' : float(arg),
               'Date' : f'{dt.now().day}-{dt.now().month}-{dt.now().year}'}]
 
+    # >
+
+    # Stack <
     [today.append(i) for i in data]
+
+    # >
 
 # Run <
 
