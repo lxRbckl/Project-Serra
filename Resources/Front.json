@@ -19,12 +19,12 @@
     "backgroundColor" : "#121212"
   },
   "datatableColumn" : [
-    "Date",
     "Fiber",
     "Sugar",
     "Calories",
     "Carbohydrates",
-    "Weight"
+    "Weight",
+    "Date"
 
   ]
 }

@@ -65,8 +65,6 @@ app.layout = html.Div([
 def dropdownFunction(arg):
     '''  '''
 
-    print('ok')
-
     return dt.DataTable(sort_action = 'native',
                         data = jsonLoad(f'{path}/Data/{arg}'),
                         columns = [{'name' : i,
@@ -76,9 +74,6 @@ def dropdownFunction(arg):
 
 
 # Run <
-while (True):
-
-    app.run_server(debug = True)
-    sleep(3600)
+app.run_server()
 
 # >
