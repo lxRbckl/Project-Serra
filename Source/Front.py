@@ -1,5 +1,6 @@
 # Import <
 import dash
+from time import sleep
 import dash_table as dt
 from Serra import jsonLoad
 from os import listdir, getcwd
@@ -73,6 +74,9 @@ def dropdownFunction(arg):
 
 
 # Run <
-app.run_server()
+while (True):
+
+    app.run_server()
+    sleep(1800)
 
 # >
