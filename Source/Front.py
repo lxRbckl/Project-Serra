@@ -21,7 +21,7 @@ setting = jsonLoad(f'{path}/Resources/Front')
 
 
 # Dashboard <
-layout = html.Div([
+app.layout = html.Div([
 
     # Header <
     html.Div([

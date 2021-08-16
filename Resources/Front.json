@@ -21,8 +21,8 @@
   "datatableColumn" : [
     "Fiber",
     "Sugar",
-    "Calories",
-    "Carbohydrates",
+    "Calorie",
+    "Carbohydrate",
     "Weight",
     "Date"
   ]

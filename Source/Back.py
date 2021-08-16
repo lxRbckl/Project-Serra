@@ -13,7 +13,7 @@ from discord.ext.commands import Bot
 path = getcwd()[:-6]
 setting = jsonLoad(f'{path}/Resources/Back')
 serra = Bot(command_prefix = '', intents = Intents.all())
-token = 'ODY4MDE2OTIyNjM2MjAyMDM2.YPphwQ.8MupVvxqsJXf5wg-GcDLT1JIaTE'
+token = ''
 
 # >
 
