@@ -49,8 +49,8 @@ async def weightFunction(ctx, arg):
     data = jsonLoad(f'{path}/Data/{ctx.author}')
     today = [{'Fiber' : 0,
               'Sugar' : 0,
-              'Calories' : 0,
-              'Carbohydrates' : 0,
+              'Calorie' : 0,
+              'Carbohydrate' : 0,
               'Weight' : float(arg),
               'Date' : f'{dt.now().day}-{dt.now().month}-{dt.now().year}'}]
 

@@ -2,7 +2,7 @@
   "wordBank" : {
     "Fiber" : ["fib", "Fib", "fiber", "Fiber"],
     "Sugar" : ["sug", "Sug", "sugar", "Sugar"],
-    "Calories" : ["cal", "Cal", "calories", "Calories"],
+    "Calorie" : ["cal", "Cal", "calories", "Calories"],
     "Carbohydrate" : ["carb", "Carb", "carbohydrate", "Carbohydrate"]
   }
 }
