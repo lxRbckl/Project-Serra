@@ -1,7 +1,7 @@
 # Import <
+from os import getcwd
 from random import choice
 from discord import Intents
-from os import getcwd, mkdir
 from datetime import datetime as dt
 from Serra import jsonLoad, jsonDump
 from discord.ext.commands import Bot
@@ -13,7 +13,7 @@ from discord.ext.commands import Bot
 path = getcwd()[:-6]
 setting = jsonLoad(f'{path}/Resources/Back')
 serra = Bot(command_prefix = '', intents = Intents.all())
-token = ''
+token = 'ODY4MDE2OTIyNjM2MjAyMDM2.YPphwQ.8MupVvxqsJXf5wg-GcDLT1JIaTE'
 
 # >
 

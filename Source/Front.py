@@ -1,6 +1,5 @@
 # Import <
 import dash
-from time import sleep
 import dash_table as dt
 from Serra import jsonLoad
 from os import listdir, getcwd
@@ -21,7 +20,7 @@ setting = jsonLoad(f'{path}/Resources/Front')
 
 
 # Dashboard <
-app.layout = html.Div([
+layout = html.Div([
 
     # Header <
     html.Div([
