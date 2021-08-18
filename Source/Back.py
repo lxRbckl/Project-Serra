@@ -20,7 +20,7 @@ token = ''
 
 @Serra.event
 async def on_member_join(user):
-    '''  '''
+    ''' user : class '''
 
     await user.send('Welcome to Serra.')
     jsonDump(f'{path}/Data/{str(user)}', [])
