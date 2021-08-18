@@ -12,13 +12,13 @@ from discord.ext.commands import Bot
 # Declaration
 path = getcwd()[:-6]
 setting = jsonLoad(f'{path}/Resources/Back')
-serra = Bot(command_prefix = '', intents = Intents.all())
+Serra = Bot(command_prefix = '', intents = Intents.all())
 token = ''
 
 # >
 
 
-@serra.event
+@Serra.event
 async def on_member_join(user):
     '''  '''
 
@@ -26,8 +26,8 @@ async def on_member_join(user):
     jsonDump(f'{path}/Data/{str(user)}', [])
 
 
-@serra.command(aliases = ['Add', 'add'])
-async def addFunction(ctx, *args):
+@Serra.command(aliases = ['Add', 'add'])
+async def commandAdd(ctx, *args):
     ''' args[0] : str
         args[1] : int '''
 
@@ -42,8 +42,8 @@ async def addFunction(ctx, *args):
             jsonDump(f'{path}/Data/{ctx.author}', data)
 
 
-@serra.command(aliases = ['weight', 'Weight'])
-async def weightFunction(ctx, arg):
+@Serra.command(aliases = ['weight', 'Weight'])
+async def commandWeight(ctx, arg):
     ''' arg : float '''
 
     data = jsonLoad(f'{path}/Data/{ctx.author}')
@@ -59,19 +59,12 @@ async def weightFunction(ctx, arg):
 
     # >
 
-    await getInspiration(ctx)
     jsonDump(f'{path}/Data/{ctx.author}', today)
+    await commandGet(ctx)
 
 
-@serra.command(aliases = ['status', 'Status'])
-async def statusFunction(ctx, arg):
-    '''  '''
-
-    pass
-
-
-@serra.command(aliases = ['set', 'Set'])
-async def setInspiration(ctx, arg):
+@Serra.command(aliases = ['set', 'Set'])
+async def commandSet(ctx, arg):
     ''' arg : str '''
 
     data = jsonLoad(f'{path}/Serra')
@@ -81,8 +74,8 @@ async def setInspiration(ctx, arg):
     jsonDump(f'{path}/Serra', data)
 
 
-@serra.command(aliases = ['get', 'Get'])
-async def getInspiration(ctx):
+@Serra.command(aliases = ['get', 'Get'])
+async def commandGet(ctx):
     '''  '''
 
     data = jsonLoad(f'{path}/Serra')
@@ -91,6 +84,6 @@ async def getInspiration(ctx):
 
 
 # Run <
-serra.run(token)
+Serra.run(token)
 
 # >
