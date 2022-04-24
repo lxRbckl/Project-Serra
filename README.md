@@ -1,7 +1,7 @@
 ## [`Project Serra`](http://lxrbckl.com/Project-Serra)
 > Monitor daily consumption with a Discord bot and visualize it with Plotly and Dash. Spring 2021.
 
-### Installation
+### `Installation`
 ```
 pip3 install dash
 pip3 install plotly
